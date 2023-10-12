@@ -2,26 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "FS Meridian Trial", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #1e293b;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+@font-face {
+  font-family: 'FS Meridian Trial';
+  src: url('../assets/FSMeridian_TRIAL/FSMeridian/FSMeridianTrial-Medium.otf');
+  src: url('../assets/FSMeridian_TRIAL/FSMeridian/FSMeridianTrial-Light.otf');
+  font-weight: 400;
+  font-style: normal;
 }
